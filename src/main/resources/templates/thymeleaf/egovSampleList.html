@@ -68,7 +68,7 @@
         <!-- Title -->
         <div id="title">
             <ul>
-                <li>
+                <li style="display: flex; gap: 10px;">
                     <img th:src="@{/images/egovframework/example/title_dot.gif}"/>
                     <span th:text="#{list.sample}"></span>
                 </li>
@@ -94,14 +94,12 @@
                     <input type="text" id="searchKeyword" name="searchKeyword" th:value="${sampleVO.searchKeyword}" class="txt"/>
                 </li>
                 <li>
-                    <span class="btn_blue_l">
+                    <span class="btn_blue">
                     <span th:text="#{button.search}" th:onclick="sampleSearch()"></span>
-                    <img th:src="@{/images/egovframework/example/btn_bg_r.gif}" style="margin-left:6px;" th:alt="#{button.search}"/></span>
                 </li>
                 <li>
-                    <span th:class="btn_blue_l">
+                    <span th:class="btn_blue">
                     <span th:text="#{button.create}" th:onclick="sampleCreate()"></span>
-                    <img th:src="@{/images/egovframework/example/btn_bg_r.gif}" style="margin-left:6px;" th:alt="#{button.create}"/></span>
                 </li>
             </ul>
         </div>
